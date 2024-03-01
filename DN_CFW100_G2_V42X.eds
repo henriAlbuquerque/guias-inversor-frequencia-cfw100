@@ -1,0 +1,4883 @@
+$ EZ-EDS Version 3.3 Generated Electronic Data Sheet
+
+[File]
+        DescText = "CFW100_V1X";
+        CreateDate = 11-08-2021;
+        CreateTime = 03:11:06;
+        ModDate = 11-08-2021;
+        ModTime = 03:11:06;
+        Revision = 1.0;
+
+
+[Device]
+        VendCode = 853;
+        VendName = "WEG Industrias SA";
+        ProdType = 2;
+        ProdTypeStr = "AC Drives";
+        ProdCode = 5120;
+        MajRev = 1;
+        MinRev = 1;
+        ProdName = "CFW100";
+
+
+[IO_Info]
+        Default = 0x0001;
+        PollInfo =
+                0x000F,
+                1,
+                1;
+        COSInfo =
+                0x0007,
+                1,
+                1;
+        CyclicInfo =
+                0x000B,
+                1,
+                1;
+
+        Input1 =
+                4,
+                0,
+                0x000D,
+                "Basic Speed Status Input",
+                6,
+                "20 04 24 46 30 03",
+                "Assembly Instance 70";
+
+        Input2 =
+                4,
+                0,
+                0x000D,
+                "Extended Speed Status Input",
+                6,
+                "20 04 24 47 30 03",
+                "Assembly Instance 71";
+
+        Input3 =
+                12,
+                0,
+                0x000D,
+                "Manuf. Specific Status Input",
+                6,
+                "20 04 24 96 30 03",
+                "Assembly Instance 150";
+
+        Output1 =
+                4,
+                0,
+                0x000D,
+                "Basic Speed Control Output",
+                6,
+                "20 04 24 14 30 03",
+                "Assembly Instance 20";
+
+        Output2 =
+                4,
+                0,
+                0x000D,
+                "Extended Speed Control Output",
+                6,
+                "20 04 24 15 30 03",
+                "Assembly Instance 21";
+
+        Output3 =
+                12,
+                0,
+                0x000D,
+                "Manuf. Specific Control Output",
+                6,
+                "20 04 24 64 30 03",
+                "Assembly Instance 100";
+
+
+[ParamClass]
+        MaxInst = 259;
+        Descriptor = 0x0001;
+        CfgAssembly = 0;
+
+
+[Params]
+ 
+
+       Param1=
+                0,
+                6,"20 64 24 01 30 65",
+                0x0030,                
+                0xC7,  
+                2,
+                "P0001 Speed Reference",
+                "",
+                "Speed Reference",
+                0,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param2=
+                0,
+                6,"20 64 24 01 30 66",
+                0x0030,                
+                0xC7,  
+                2,
+                "P0002 Output Speed (Motor)",
+                "",
+                "Output Speed (Motor)",
+                0,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param3=
+                0,
+                6,"20 64 24 01 30 67",
+                0x0074,                
+                0xC7,  
+                2,
+                "P0003 Motor Current",
+                "A",
+                "Motor Current",
+                0,100,0,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param4=
+                0,
+                6,"20 64 24 01 30 68",
+                0x0030,                
+                0xC7,  
+                2,
+                "P0004 DC Link Voltage",
+                "V",
+                "DC Link Voltage",
+                0,524,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param5=
+                0,
+                6,"20 64 24 01 30 69",
+                0x0074,                
+                0xC7,  
+                2,
+                "P0005 Output Frequency (Motor)",
+                "HZ",
+                "Output Frequency (Motor)",
+                0,4000,0,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param6=
+                0,
+                6,"20 64 24 01 30 6a",
+                0x0032,                
+                0xC7,  
+                2,
+                "P0006 Inverter Status",
+                "",
+                "Inverter Status",
+                0,8,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param7=
+                0,
+                6,"20 64 24 01 30 6b",
+                0x0030,                
+                0xC7,  
+                2,
+                "P0007 Output Voltage",
+                "V",
+                "Output Voltage",
+                0,240,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param8=
+                0,
+                6,"20 64 24 01 30 6d",
+                0x0074,                
+                0xC3,  
+                2,
+                "P0009 Motor Torque",
+                "%",
+                "Motor Torque",
+                -2000,2000,0,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param9=
+                0,
+                6,"20 64 24 01 30 6f",
+                0x0074,                
+                0xC7,  
+                2,
+                "P0011 Power Factor",
+                "",
+                "Power Factor",
+                0,100,0,
+                1,1,1,0,
+                ,,,,
+                2; 
+
+       Param10=
+                0,
+                6,"20 64 24 01 30 70",
+                0x0030,                
+                0xC7,  
+                2,
+                "P0012 DI8 to DI1 Status",
+                "",
+                "DI8 to DI1 Status",
+                0,255,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param11=
+                0,
+                6,"20 64 24 01 30 71",
+                0x0010,                
+                0xC7,  
+                2,
+                "P0013 DO3 to DO1 Status",
+                "",
+                "DO3 to DO1 Status",
+                0,7,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param12=
+                0,
+                6,"20 64 24 01 30 72",
+                0x0054,                
+                0xC3,  
+                2,
+                "P0014 AO1 Value",
+                "%",
+                "AO1 Value",
+                0,1000,0,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param13=
+                0,
+                6,"20 64 24 01 30 76",
+                0x0054,                
+                0xC3,  
+                2,
+                "P0018 AI1 Value",
+                "%",
+                "AI1 Value",
+                -1000,1000,0,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param14=
+                0,
+                6,"20 64 24 01 30 78",
+                0x0054,                
+                0xC3,  
+                2,
+                "P0020 Potentiometer Signal Value",
+                "%",
+                "Potentiometer Signal Value",
+                -1000,1000,0,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param15=
+                0,
+                6,"20 64 24 01 30 7a",
+                0x0030,                
+                0xC7,  
+                2,
+                "P0022 FI Value in Hz",
+                "HZ",
+                "FI Value in Hz",
+                0,3000,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param16=
+                0,
+                6,"20 64 24 01 30 7b",
+                0x0074,                
+                0xC7,  
+                2,
+                "P0023 Main SW Version",
+                "",
+                "Main SW Version",
+                0,9999,420,
+                1,1,1,0,
+                ,,,,
+                2; 
+
+       Param17=
+                0,
+                6,"20 64 24 01 30 7c",
+                0x0074,                
+                0xC7,  
+                2,
+                "P0024 Accessory SW Version",
+                "",
+                "Accessory SW Version",
+                0,9999,0,
+                1,1,1,0,
+                ,,,,
+                2; 
+
+       Param18=
+                0,
+                6,"20 64 24 01 30 7f",
+                0x0032,                
+                0xC7,  
+                2,
+                "P0027 Accessory Config.",
+                "",
+                "Accessory Config.",
+                0,11,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param19=
+                0,
+                6,"20 64 24 01 30 81",
+                0x0032,                
+                0xC7,  
+                2,
+                "P0029 Power HW Configuration",
+                "",
+                "Power HW Configuration",
+                0,9,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param20=
+                0,
+                6,"20 64 24 01 30 82",
+                0x0074,                
+                0xC3,  
+                2,
+                "P0030 Module Temperature",
+                "°C",
+                "Module Temperature",
+                -2000,2000,0,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param21=
+                0,
+                6,"20 64 24 01 30 89",
+                0x0074,                
+                0xC7,  
+                2,
+                "P0037 Motor Overload Ixt",
+                "%",
+                "Motor Overload Ixt",
+                0,1000,0,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param22=
+                0,
+                6,"20 64 24 01 30 8a",
+                0x0010,                
+                0xC3,  
+                2,
+                "P0038 Encoder Speed",
+                "rpm",
+                "Encoder Speed",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param23=
+                0,
+                6,"20 64 24 01 30 8b",
+                0x0010,                
+                0xC7,  
+                2,
+                "P0039 Encoder Pulses Count",
+                "",
+                "Encoder Pulses Count",
+                0,65535,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param24=
+                0,
+                6,"20 64 24 01 30 8e",
+                0x0074,                
+                0xC7,  
+                2,
+                "P0042 Running Time",
+                "",
+                "Running Time",
+                0,9999,0,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param25=
+                0,
+                6,"20 64 24 01 30 8f",
+                0x0030,                
+                0xC7,  
+                2,
+                "P0043 Running Time(h/1000)",
+                "",
+                "Running Time(h/1000)",
+                0,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param26=
+                0,
+                6,"20 64 24 01 30 91",
+                0x0030,                
+                0xC7,  
+                2,
+                "P0045 Fan Enabled Time",
+                "",
+                "Fan Enabled Time",
+                0,65535,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param27=
+                0,
+                6,"20 64 24 01 30 93",
+                0x0032,                
+                0xC7,  
+                2,
+                "P0047 CONF Status",
+                "",
+                "CONF Status",
+                0,33,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param28=
+                0,
+                6,"20 64 24 01 30 94",
+                0x0030,                
+                0xC7,  
+                2,
+                "P0048 Present Alarm",
+                "",
+                "Present Alarm",
+                0,999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param29=
+                0,
+                6,"20 64 24 01 30 95",
+                0x0030,                
+                0xC7,  
+                2,
+                "P0049 Present Fault",
+                "",
+                "Present Fault",
+                0,999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param30=
+                0,
+                6,"20 64 24 01 30 96",
+                0x0030,                
+                0xC7,  
+                2,
+                "P0050 Last Fault",
+                "",
+                "Last Fault",
+                0,999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param31=
+                0,
+                6,"20 64 24 01 30 97",
+                0x0074,                
+                0xC7,  
+                2,
+                "P0051 Current At Last Fault",
+                "A",
+                "Current At Last Fault",
+                0,100,0,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param32=
+                0,
+                6,"20 64 24 01 30 98",
+                0x0030,                
+                0xC7,  
+                2,
+                "P0052 DC Link At Last Fault",
+                "V",
+                "DC Link At Last Fault",
+                0,524,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param33=
+                0,
+                6,"20 64 24 01 30 99",
+                0x0074,                
+                0xC7,  
+                2,
+                "P0053 Frequency At Last Fault",
+                "HZ",
+                "Frequency At Last Fault",
+                0,4000,0,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param34=
+                0,
+                6,"20 64 24 01 30 9a",
+                0x0074,                
+                0xC7,  
+                2,
+                "P0054 Temperature Last Fault",
+                "°C",
+                "Temperature Last Fault",
+                0,2000,0,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param35=
+                0,
+                6,"20 64 24 01 30 a0",
+                0x0030,                
+                0xC7,  
+                2,
+                "P0060 Second Fault",
+                "",
+                "Second Fault",
+                0,999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param36=
+                0,
+                6,"20 64 24 01 30 aa",
+                0x0030,                
+                0xC7,  
+                2,
+                "P0070 Third Fault",
+                "",
+                "Third Fault",
+                0,999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param37=
+                0,
+                6,"20 64 24 01 30 b4",
+                0x0030,                
+                0xC7,  
+                2,
+                "P0080 Last Fault on Fire Mode",
+                "",
+                "Last Fault on Fire Mode",
+                0,999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param38=
+                0,
+                6,"20 64 24 01 30 b5",
+                0x0030,                
+                0xC7,  
+                2,
+                "P0081 Second Fault on Fire Mode",
+                "",
+                "Second Fault on Fire Mode",
+                0,999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param39=
+                0,
+                6,"20 64 24 01 30 b6",
+                0x0030,                
+                0xC7,  
+                2,
+                "P0082 Third Fault on Fire Mode",
+                "",
+                "Third Fault on Fire Mode",
+                0,999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param40=
+                0,
+                6,"20 64 24 01 30 b7",
+                0x0020,                
+                0xC7,  
+                2,
+                "P0083 Fire Mode Counter",
+                "",
+                "Fire Mode Counter",
+                0,999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param41=
+                0,
+                6,"20 65 24 01 30 64",
+                0x0064,                
+                0xC7,  
+                2,
+                "P0100 Acceleration Time",
+                "s",
+                "Acceleration Time",
+                1,9999,50,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param42=
+                0,
+                6,"20 65 24 01 30 65",
+                0x0064,                
+                0xC7,  
+                2,
+                "P0101 Deceleration Time",
+                "s",
+                "Deceleration Time",
+                1,9999,100,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param43=
+                0,
+                6,"20 65 24 01 30 66",
+                0x0064,                
+                0xC7,  
+                2,
+                "P0102 Acceleration Time 2nd Ramp",
+                "s",
+                "Acceleration Time 2nd Ramp",
+                1,9999,50,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param44=
+                0,
+                6,"20 65 24 01 30 67",
+                0x0064,                
+                0xC7,  
+                2,
+                "P0103 Deceleration Time 2nd Ramp",
+                "s",
+                "Deceleration Time 2nd Ramp",
+                1,9999,100,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param45=
+                0,
+                6,"20 65 24 01 30 68",
+                0x0022,                
+                0xC7,  
+                2,
+                "P0104 Ramp S",
+                "",
+                "Ramp S",
+                0,1,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param46=
+                0,
+                6,"20 65 24 01 30 69",
+                0x0022,                
+                0xC7,  
+                2,
+                "P0105 1st / 2nd Ramp Selection",
+                "",
+                "1st / 2nd Ramp Selection",
+                0,6,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param47=
+                0,
+                6,"20 65 24 01 30 6a",
+                0x0064,                
+                0xC7,  
+                2,
+                "P0106 Emer. R. Acceleration Time",
+                "s",
+                "Emer. R. Acceleration Time",
+                1,9999,50,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param48=
+                0,
+                6,"20 65 24 01 30 6b",
+                0x0064,                
+                0xC7,  
+                2,
+                "P0107 Emer. R. Time Deceleration",
+                "s",
+                "Emer. R. Time Deceleration",
+                1,9999,50,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param49=
+                0,
+                6,"20 65 24 01 30 78",
+                0x0022,                
+                0xC7,  
+                2,
+                "P0120 Speed Ref. Backup",
+                "",
+                "Speed Ref. Backup",
+                0,2,1,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param50=
+                0,
+                6,"20 65 24 01 30 79",
+                0x0064,                
+                0xC7,  
+                2,
+                "P0121 Reference via HMI",
+                "HZ",
+                "Reference via HMI",
+                0,4000,30,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param51=
+                0,
+                6,"20 65 24 01 30 7a",
+                0x0064,                
+                0xC3,  
+                2,
+                "P0122 JOG Reference",
+                "HZ",
+                "JOG Reference",
+                -4000,4000,50,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param52=
+                0,
+                6,"20 65 24 01 30 7c",
+                0x0044,                
+                0xC3,  
+                2,
+                "P0124 Multispeed Ref. 1",
+                "HZ",
+                "Multispeed Ref. 1",
+                -4000,4000,30,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param53=
+                0,
+                6,"20 65 24 01 30 7d",
+                0x0044,                
+                0xC3,  
+                2,
+                "P0125 Multispeed Ref. 2",
+                "HZ",
+                "Multispeed Ref. 2",
+                -4000,4000,100,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param54=
+                0,
+                6,"20 65 24 01 30 7e",
+                0x0044,                
+                0xC3,  
+                2,
+                "P0126 Multispeed Ref. 3",
+                "HZ",
+                "Multispeed Ref. 3",
+                -4000,4000,200,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param55=
+                0,
+                6,"20 65 24 01 30 7f",
+                0x0044,                
+                0xC3,  
+                2,
+                "P0127 Multispeed Ref. 4",
+                "HZ",
+                "Multispeed Ref. 4",
+                -4000,4000,300,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param56=
+                0,
+                6,"20 65 24 01 30 80",
+                0x0044,                
+                0xC3,  
+                2,
+                "P0128 Multispeed Ref. 5",
+                "HZ",
+                "Multispeed Ref. 5",
+                -4000,4000,400,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param57=
+                0,
+                6,"20 65 24 01 30 81",
+                0x0044,                
+                0xC3,  
+                2,
+                "P0129 Multispeed Ref. 6",
+                "HZ",
+                "Multispeed Ref. 6",
+                -4000,4000,500,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param58=
+                0,
+                6,"20 65 24 01 30 82",
+                0x0044,                
+                0xC3,  
+                2,
+                "P0130 Multispeed Ref. 7",
+                "HZ",
+                "Multispeed Ref. 7",
+                -4000,4000,600,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param59=
+                0,
+                6,"20 65 24 01 30 83",
+                0x0044,                
+                0xC3,  
+                2,
+                "P0131 Multispeed Ref. 8",
+                "HZ",
+                "Multispeed Ref. 8",
+                -4000,4000,660,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param60=
+                0,
+                6,"20 65 24 01 30 85",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0133 Minimum Frequency",
+                "HZ",
+                "Minimum Frequency",
+                0,4000,30,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param61=
+                0,
+                6,"20 65 24 01 30 86",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0134 Maximum Frequency",
+                "HZ",
+                "Maximum Frequency",
+                0,4000,660,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param62=
+                0,
+                6,"20 65 24 01 30 87",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0135 Maximum Output Current",
+                "A",
+                "Maximum Output Current",
+                0,400,16,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param63=
+                0,
+                6,"20 65 24 01 30 88",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0136 Manual Torque Boost",
+                "%",
+                "Manual Torque Boost",
+                0,300,50,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param64=
+                0,
+                6,"20 65 24 01 30 89",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0137 Automatic Torque Boost",
+                "%",
+                "Automatic Torque Boost",
+                0,300,0,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param65=
+                0,
+                6,"20 65 24 01 30 8a",
+                0x0044,                
+                0xC3,  
+                2,
+                "P0138 Slip Compensation",
+                "%",
+                "Slip Compensation",
+                -100,100,0,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param66=
+                0,
+                6,"20 65 24 01 30 8b",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0139 Output Current Filter",
+                "s",
+                "Output Current Filter",
+                0,9999,50,
+                1,1,1,0,
+                ,,,,
+                3; 
+
+       Param67=
+                0,
+                6,"20 65 24 01 30 8c",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0140 Slip Com. Filter",
+                "s",
+                "Slip Com. Filter",
+                0,9999,500,
+                1,1,1,0,
+                ,,,,
+                3; 
+
+       Param68=
+                0,
+                6,"20 65 24 01 30 8e",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0142 Maximum Output Voltage",
+                "%",
+                "Maximum Output Voltage",
+                0,1000,1000,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param69=
+                0,
+                6,"20 65 24 01 30 8f",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0143 Intermediate Output Voltage",
+                "%",
+                "Intermediate Output Voltage",
+                0,1000,500,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param70=
+                0,
+                6,"20 65 24 01 30 91",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0145 Field Weakening Speed",
+                "HZ",
+                "Field Weakening Speed",
+                0,4000,600,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param71=
+                0,
+                6,"20 65 24 01 30 92",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0146 Intermediate Frequency",
+                "HZ",
+                "Intermediate Frequency",
+                0,4000,300,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param72=
+                0,
+                6,"20 65 24 01 30 95",
+                0x002,                
+                0xC7,  
+                2,
+                "P0149 DC Link Comp. Mode",
+                "",
+                "DC Link Comp. Mode",
+                0,3,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param73=
+                0,
+                6,"20 65 24 01 30 96",
+                0x002,                
+                0xC7,  
+                2,
+                "P0150 DC/LC Regul. Type",
+                "",
+                "DC/LC Regul. Type",
+                0,3,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param74=
+                0,
+                6,"20 65 24 01 30 97",
+                0x000,                
+                0xC7,  
+                2,
+                "P0151 DC Link Regul. Level",
+                "V",
+                "DC Link Regul. Level",
+                325,460,380,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param75=
+                0,
+                6,"20 65 24 01 30 9c",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0156 Rated Speed Overload Current",
+                "A",
+                "Rated Speed Overload Current",
+                1,400,16,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param76=
+                0,
+                6,"20 65 24 01 30 9d",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0157 Overl.Curr.50 % Speed",
+                "A",
+                "Overl.Curr.50 % Speed",
+                1,400,16,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param77=
+                0,
+                6,"20 65 24 01 30 9e",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0158 Overl.Curr.20 % Speed",
+                "A",
+                "Overl.Curr.20 % Speed",
+                1,400,16,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param78=
+                0,
+                6,"20 65 24 01 30 b2",
+                0x0064,                
+                0xC7,  
+                2,
+                "P0178 Rated Flux",
+                "%",
+                "Rated Flux",
+                500,1500,1000,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param79=
+                0,
+                6,"20 66 24 01 30 64",
+                0x000,                
+                0xC7,  
+                2,
+                "P0200 Password",
+                "",
+                "Password",
+                0,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param80=
+                0,
+                6,"20 66 24 01 30 66",
+                0x002,                
+                0xC7,  
+                2,
+                "P0202 Type of Control",
+                "",
+                "Type of Control",
+                0,5,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param81=
+                0,
+                6,"20 66 24 01 30 68",
+                0x002,                
+                0xC7,  
+                2,
+                "P0204 Load/Save Parameters",
+                "",
+                "Load/Save Parameters",
+                0,13,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param82=
+                0,
+                6,"20 66 24 01 30 69",
+                0x000,                
+                0xC7,  
+                2,
+                "P0205 Main Display Parameter",
+                "",
+                "Main Display Parameter",
+                0,999,2,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param83=
+                0,
+                6,"20 66 24 01 30 6b",
+                0x000,                
+                0xC7,  
+                2,
+                "P0207 Bar Graph Parameter",
+                "",
+                "Bar Graph Parameter",
+                0,999,3,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param84=
+                0,
+                6,"20 66 24 01 30 6c",
+                0x000,                
+                0xC7,  
+                2,
+                "P0208 Ref. Scale Factor",
+                "",
+                "Ref. Scale Factor",
+                1,9999,600,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param85=
+                0,
+                6,"20 66 24 01 30 6d",
+                0x002,                
+                0xC7,  
+                2,
+                "P0209 Ref. Eng. Unit",
+                "",
+                "Ref. Eng. Unit",
+                0,7,3,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param86=
+                0,
+                6,"20 66 24 01 30 6e",
+                0x002,                
+                0xC7,  
+                2,
+                "P0210 Ref. Decimal Point",
+                "",
+                "Ref. Decimal Point",
+                0,3,1,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param87=
+                0,
+                6,"20 66 24 01 30 71",
+                0x000,                
+                0xC7,  
+                2,
+                "P0213 Bar Scale Factor",
+                "",
+                "Bar Scale Factor",
+                1,9999,52,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param88=
+                0,
+                6,"20 66 24 01 30 77",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0219 Red. Switch. Freq.",
+                "HZ",
+                "Red. Switch. Freq.",
+                0,150,50,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param89=
+                0,
+                6,"20 66 24 01 30 78",
+                0x002,                
+                0xC7,  
+                2,
+                "P0220 LOC/REM Selection Source",
+                "",
+                "LOC/REM Selection Source",
+                0,11,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param90=
+                0,
+                6,"20 66 24 01 30 79",
+                0x002,                
+                0xC7,  
+                2,
+                "P0221 LOC Reference Sel.",
+                "",
+                "LOC Reference Sel.",
+                0,17,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param91=
+                0,
+                6,"20 66 24 01 30 7a",
+                0x002,                
+                0xC7,  
+                2,
+                "P0222 REM Reference Selection",
+                "",
+                "REM Reference Selection",
+                0,17,2,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param92=
+                0,
+                6,"20 66 24 01 30 7b",
+                0x002,                
+                0xC7,  
+                2,
+                "P0223 LOC FWD/REV Selection",
+                "",
+                "LOC FWD/REV Selection",
+                0,12,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param93=
+                0,
+                6,"20 66 24 01 30 7c",
+                0x002,                
+                0xC7,  
+                2,
+                "P0224 LOC Run/Stop Sel.",
+                "",
+                "LOC Run/Stop Sel.",
+                0,5,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param94=
+                0,
+                6,"20 66 24 01 30 7d",
+                0x002,                
+                0xC7,  
+                2,
+                "P0225 LOC JOG Selection",
+                "",
+                "LOC JOG Selection",
+                0,6,1,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param95=
+                0,
+                6,"20 66 24 01 30 7e",
+                0x002,                
+                0xC7,  
+                2,
+                "P0226 REM FWD/REV Selection",
+                "",
+                "REM FWD/REV Selection",
+                0,12,4,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param96=
+                0,
+                6,"20 66 24 01 30 7f",
+                0x002,                
+                0xC7,  
+                2,
+                "P0227 REM Run/Stop Selection",
+                "",
+                "REM Run/Stop Selection",
+                0,5,1,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param97=
+                0,
+                6,"20 66 24 01 30 80",
+                0x002,                
+                0xC7,  
+                2,
+                "P0228 REM JOG Selection",
+                "",
+                "REM JOG Selection",
+                0,6,2,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param98=
+                0,
+                6,"20 66 24 01 30 81",
+                0x002,                
+                0xC7,  
+                2,
+                "P0229 Stop Mode Selection",
+                "",
+                "Stop Mode Selection",
+                0,1,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param99=
+                0,
+                6,"20 66 24 01 30 82",
+                0x002,                
+                0xC7,  
+                2,
+                "P0230 Dead Zone (AIs and FI1 )",
+                "",
+                "Dead Zone (AIs and FI1 )",
+                0,1,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param100=
+                0,
+                6,"20 66 24 01 30 83",
+                0x002,                
+                0xC7,  
+                2,
+                "P0231 AI1 Signal Function",
+                "",
+                "AI1 Signal Function",
+                0,17,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param101=
+                0,
+                6,"20 66 24 01 30 84",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0232 AI1 Input Gain",
+                "",
+                "AI1 Input Gain",
+                0,9999,1000,
+                1,1,1,0,
+                ,,,,
+                3; 
+
+       Param102=
+                0,
+                6,"20 66 24 01 30 85",
+                0x002,                
+                0xC7,  
+                2,
+                "P0233 AI1 Input Signal",
+                "",
+                "AI1 Input Signal",
+                0,3,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param103=
+                0,
+                6,"20 66 24 01 30 86",
+                0x0044,                
+                0xC3,  
+                2,
+                "P0234 AI1 Input Offset",
+                "%",
+                "AI1 Input Offset",
+                -1000,1000,0,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param104=
+                0,
+                6,"20 66 24 01 30 87",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0235 AI1 Input Filter",
+                "s",
+                "AI1 Input Filter",
+                0,1600,0,
+                1,1,1,0,
+                ,,,,
+                2; 
+
+       Param105=
+                0,
+                6,"20 66 24 01 30 8d",
+                0x002,                
+                0xC7,  
+                2,
+                "P0241 Potentiometer Signal Function",
+                "",
+                "Potentiometer Signal Function",
+                0,17,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param106=
+                0,
+                6,"20 66 24 01 30 8e",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0242 Potentiometer Signal Gain",
+                "",
+                "Potentiometer Signal Gain",
+                0,9999,1000,
+                1,1,1,0,
+                ,,,,
+                3; 
+
+       Param107=
+                0,
+                6,"20 66 24 01 30 90",
+                0x0044,                
+                0xC3,  
+                2,
+                "P0244 Potentiometer Signal Offset",
+                "%",
+                "Potentiometer Signal Offset",
+                -1000,1000,0,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param108=
+                0,
+                6,"20 66 24 01 30 91",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0245 Potentiometer and FI1 Filter",
+                "s",
+                "Potentiometer and FI1 Filter",
+                0,1600,0,
+                1,1,1,0,
+                ,,,,
+                2; 
+
+       Param109=
+                0,
+                6,"20 66 24 01 30 92",
+                0x002,                
+                0xC7,  
+                2,
+                "P0246 FI1 Input Function",
+                "",
+                "FI1 Input Function",
+                0,4,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param110=
+                0,
+                6,"20 66 24 01 30 93",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0247 FI1 Input Gain",
+                "",
+                "FI1 Input Gain",
+                0,9999,1000,
+                1,1,1,0,
+                ,,,,
+                3; 
+
+       Param111=
+                0,
+                6,"20 66 24 01 30 94",
+                0x000,                
+                0xC7,  
+                2,
+                "P0248 FI1 Minimum Input",
+                "HZ",
+                "FI1 Minimum Input",
+                1,3000,100,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param112=
+                0,
+                6,"20 66 24 01 30 95",
+                0x0044,                
+                0xC3,  
+                2,
+                "P0249 FI1 Input Offset",
+                "%",
+                "FI1 Input Offset",
+                -1000,1000,0,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param113=
+                0,
+                6,"20 66 24 01 30 96",
+                0x000,                
+                0xC7,  
+                2,
+                "P0250 FI1 Maximum Input",
+                "HZ",
+                "FI1 Maximum Input",
+                1,3000,1000,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param114=
+                0,
+                6,"20 66 24 01 30 97",
+                0x002,                
+                0xC7,  
+                2,
+                "P0251 AO1 Output Function",
+                "",
+                "AO1 Output Function",
+                0,30,2,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param115=
+                0,
+                6,"20 66 24 01 30 98",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0252 AO1 Output Gain",
+                "",
+                "AO1 Output Gain",
+                0,9999,1000,
+                1,1,1,0,
+                ,,,,
+                3; 
+
+       Param116=
+                0,
+                6,"20 66 24 01 30 99",
+                0x002,                
+                0xC7,  
+                2,
+                "P0253 AO1 Output Signal",
+                "",
+                "AO1 Output Signal",
+                0,5,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param117=
+                0,
+                6,"20 66 24 01 30 a3",
+                0x002,                
+                0xC7,  
+                2,
+                "P0263 DI1 Input Function",
+                "",
+                "DI1 Input Function",
+                0,57,1,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param118=
+                0,
+                6,"20 66 24 01 30 a4",
+                0x002,                
+                0xC7,  
+                2,
+                "P0264 DI2 Input Function",
+                "",
+                "DI2 Input Function",
+                0,57,8,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param119=
+                0,
+                6,"20 66 24 01 30 a5",
+                0x002,                
+                0xC7,  
+                2,
+                "P0265 DI3 Input Function",
+                "",
+                "DI3 Input Function",
+                0,57,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param120=
+                0,
+                6,"20 66 24 01 30 a6",
+                0x002,                
+                0xC7,  
+                2,
+                "P0266 DI4 Input Function",
+                "",
+                "DI4 Input Function",
+                0,57,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param121=
+                0,
+                6,"20 66 24 01 30 a7",
+                0x002,                
+                0xC7,  
+                2,
+                "P0267 DI5 Input Function",
+                "",
+                "DI5 Input Function",
+                0,57,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param122=
+                0,
+                6,"20 66 24 01 30 a8",
+                0x002,                
+                0xC7,  
+                2,
+                "P0268 DI6 Input Function",
+                "",
+                "DI6 Input Function",
+                0,57,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param123=
+                0,
+                6,"20 66 24 01 30 a9",
+                0x002,                
+                0xC7,  
+                2,
+                "P0269 DI7 Input Function",
+                "",
+                "DI7 Input Function",
+                0,57,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param124=
+                0,
+                6,"20 66 24 01 30 aa",
+                0x002,                
+                0xC7,  
+                2,
+                "P0270 DI8 Input Function",
+                "",
+                "DI8 Input Function",
+                0,57,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param125=
+                0,
+                6,"20 66 24 01 30 ab",
+                0x002,                
+                0xC7,  
+                2,
+                "P0271 DIs Function",
+                "",
+                "DIs Function",
+                0,3,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param126=
+                0,
+                6,"20 66 24 01 30 af",
+                0x002,                
+                0xC7,  
+                2,
+                "P0275 DO1 Function",
+                "",
+                "DO1 Function",
+                0,47,13,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param127=
+                0,
+                6,"20 66 24 01 30 b0",
+                0x002,                
+                0xC7,  
+                2,
+                "P0276 DO2 Function",
+                "",
+                "DO2 Function",
+                0,47,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param128=
+                0,
+                6,"20 66 24 01 30 b1",
+                0x002,                
+                0xC7,  
+                2,
+                "P0277 DO3 Function",
+                "",
+                "DO3 Function",
+                0,47,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param129=
+                0,
+                6,"20 66 24 01 30 b5",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0281 Fx Frequency",
+                "HZ",
+                "Fx Frequency",
+                0,4000,30,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param130=
+                0,
+                6,"20 66 24 01 30 b6",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0282 Fx Hysteresis",
+                "HZ",
+                "Fx Hysteresis",
+                0,150,5,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param131=
+                0,
+                6,"20 66 24 01 30 be",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0290 Ix Current",
+                "A",
+                "Ix Current",
+                0,100,36,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param132=
+                0,
+                6,"20 66 24 01 30 c1",
+                0x000,                
+                0xC7,  
+                2,
+                "P0293 Tx Torque",
+                "%",
+                "Tx Torque",
+                0,200,100,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param133=
+                0,
+                6,"20 66 24 01 30 c3",
+                0x0054,                
+                0xC7,  
+                2,
+                "P0295 Inverter Rated Current",
+                "A",
+                "Inverter Rated Current",
+                16,73,16,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param134=
+                0,
+                6,"20 66 24 01 30 c4",
+                0x0010,                
+                0xC7,  
+                2,
+                "P0296 Line Rated Voltage",
+                "",
+                "Line Rated Voltage",
+                0,2,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param135=
+                0,
+                6,"20 66 24 01 30 c5",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0297 Switching Frequency",
+                "",
+                "Switching Frequency",
+                25,150,50,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param136=
+                0,
+                6,"20 66 24 01 30 c7",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0299 DC Braking Start Time",
+                "s",
+                "DC Braking Start Time",
+                0,150,0,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param137=
+                0,
+                6,"20 67 24 01 30 64",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0300 DC Braking Stop Time",
+                "s",
+                "DC Braking Stop Time",
+                0,150,0,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param138=
+                0,
+                6,"20 67 24 01 30 65",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0301 DC Braking Frequency",
+                "HZ",
+                "DC Braking Frequency",
+                0,150,30,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param139=
+                0,
+                6,"20 67 24 01 30 66",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0302 DC Braking Current",
+                "%",
+                "DC Braking Current",
+                0,1000,200,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param140=
+                0,
+                6,"20 67 24 01 30 67",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0303 Skip Frequency 1",
+                "HZ",
+                "Skip Frequency 1",
+                0,4000,0,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param141=
+                0,
+                6,"20 67 24 01 30 68",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0304 Skip Frequency 2",
+                "HZ",
+                "Skip Frequency 2",
+                0,4000,0,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param142=
+                0,
+                6,"20 67 24 01 30 6a",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0306 Skip Band",
+                "HZ",
+                "Skip Band",
+                0,250,0,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param143=
+                0,
+                6,"20 67 24 01 30 6c",
+                0x000,                
+                0xC7,  
+                2,
+                "P0308 Serial Address",
+                "",
+                "Serial Address",
+                1,247,1,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param144=
+                0,
+                6,"20 67 24 01 30 6e",
+                0x002,                
+                0xC7,  
+                2,
+                "P0310 Serial Baud Rate",
+                "",
+                "Serial Baud Rate",
+                0,4,1,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param145=
+                0,
+                6,"20 67 24 01 30 6f",
+                0x002,                
+                0xC7,  
+                2,
+                "P0311 Serial Bytes Config.",
+                "",
+                "Serial Bytes Config.",
+                0,5,1,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param146=
+                0,
+                6,"20 67 24 01 30 70",
+                0x002,                
+                0xC7,  
+                2,
+                "P0312 Serial Protocol",
+                "",
+                "Serial Protocol",
+                0,5,2,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param147=
+                0,
+                6,"20 67 24 01 30 71",
+                0x002,                
+                0xC7,  
+                2,
+                "P0313 Action for Communic. Error",
+                "",
+                "Action for Communic. Error",
+                0,5,1,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param148=
+                0,
+                6,"20 67 24 01 30 72",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0314 Serial Watchdog",
+                "s",
+                "Serial Watchdog",
+                0,9990,0,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param149=
+                0,
+                6,"20 67 24 01 30 74",
+                0x0012,                
+                0xC7,  
+                2,
+                "P0316 Serial Interf. Status",
+                "",
+                "Serial Interf. Status",
+                0,2,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param150=
+                0,
+                6,"20 67 24 01 30 78",
+                0x002,                
+                0xC7,  
+                2,
+                "P0320 Flying Start / Ride-Through",
+                "",
+                "Flying Start / Ride-Through",
+                0,3,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param151=
+                0,
+                6,"20 67 24 01 30 83",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0331 Voltage Ramp for FS and RT",
+                "s",
+                "Voltage Ramp for FS and RT",
+                2,600,20,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param152=
+                0,
+                6,"20 67 24 01 30 84",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0332 Dead Time",
+                "s",
+                "Dead Time",
+                1,100,10,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param153=
+                0,
+                6,"20 67 24 01 30 8c",
+                0x000,                
+                0xC7,  
+                2,
+                "P0340 Auto-Reset Time",
+                "s",
+                "Auto-Reset Time",
+                0,255,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param154=
+                0,
+                6,"20 67 24 01 30 98",
+                0x002,                
+                0xC7,  
+                2,
+                "P0352 Fan Control Config.",
+                "",
+                "Fan Control Config.",
+                0,2,2,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param155=
+                0,
+                6,"20 67 24 01 30 af",
+                0x0010,                
+                0xC7,  
+                2,
+                "P0375 External Sensor Temp.",
+                "°C",
+                "External Sensor Temp.",
+                0,200,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param156=
+                0,
+                6,"20 67 24 01 30 c5",
+                0x000,                
+                0xC7,  
+                2,
+                "P0397 Control Config",
+                "",
+                "Control Config",
+                0,15,1,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param157=
+                0,
+                6,"20 67 24 01 30 c7",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0399 Motor Rated Efficiency",
+                "%",
+                "Motor Rated Efficiency",
+                500,999,670,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param158=
+                0,
+                6,"20 68 24 01 30 64",
+                0x000,                
+                0xC7,  
+                2,
+                "P0400 Motor Rated Voltage",
+                "V",
+                "Motor Rated Voltage",
+                0,240,220,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param159=
+                0,
+                6,"20 68 24 01 30 65",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0401 Motor Rated Current",
+                "A",
+                "Motor Rated Current",
+                0,100,14,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param160=
+                0,
+                6,"20 68 24 01 30 66",
+                0x000,                
+                0xC7,  
+                2,
+                "P0402 Motor Rated Speed",
+                "rpm",
+                "Motor Rated Speed",
+                0,24000,1720,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param161=
+                0,
+                6,"20 68 24 01 30 67",
+                0x000,                
+                0xC7,  
+                2,
+                "P0403 Motor Rated Frequency",
+                "HZ",
+                "Motor Rated Frequency",
+                0,400,60,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param162=
+                0,
+                6,"20 68 24 01 30 68",
+                0x002,                
+                0xC7,  
+                2,
+                "P0404 Motor Rated Power",
+                "",
+                "Motor Rated Power",
+                0,7,2,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param163=
+                0,
+                6,"20 68 24 01 30 6b",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0407 Motor Rated Power Factor",
+                "",
+                "Motor Rated Power Factor",
+                50,99,69,
+                1,1,1,0,
+                ,,,,
+                2; 
+
+       Param164=
+                0,
+                6,"20 68 24 01 30 6c",
+                0x002,                
+                0xC7,  
+                2,
+                "P0408 Run Self-Tuning",
+                "",
+                "Run Self-Tuning",
+                0,1,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param165=
+                0,
+                6,"20 68 24 01 30 6d",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0409 Stator Resistance",
+                "",
+                "Stator Resistance",
+                1,9999,1063,
+                1,1,1,0,
+                ,,,,
+                2; 
+
+       Param166=
+                0,
+                6,"20 69 24 01 30 6e",
+                0x002,                
+                0xC7,  
+                2,
+                "P0510 SoftPLC Eng. Unit",
+                "",
+                "SoftPLC Eng. Unit",
+                0,7,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param167=
+                0,
+                6,"20 69 24 01 30 6f",
+                0x002,                
+                0xC7,  
+                2,
+                "P0511 SoftPLC Indication Form",
+                "",
+                "SoftPLC Indication Form",
+                0,3,1,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param168=
+                0,
+                6,"20 69 24 01 30 b4",
+                0x002,                
+                0xC7,  
+                2,
+                "P0580 Fire Mode Configuration",
+                "",
+                "Fire Mode Configuration",
+                0,4,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param169=
+                0,
+                6,"20 69 24 01 30 b6",
+                0x002,                
+                0xC7,  
+                2,
+                "P0582 Fire Mode Auto-reset Adjustable",
+                "",
+                "Fire Mode Auto-reset Adjustable",
+                0,1,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param170=
+                0,
+                6,"20 69 24 01 30 bc",
+                0x000,                
+                0xC7,  
+                2,
+                "P0588 EOC Maximum Torque",
+                "%",
+                "EOC Maximum Torque",
+                0,85,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param171=
+                0,
+                6,"20 69 24 01 30 bd",
+                0x000,                
+                0xC7,  
+                2,
+                "P0589 EOC Minimum Voltage",
+                "%",
+                "EOC Minimum Voltage",
+                40,80,40,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param172=
+                0,
+                6,"20 69 24 01 30 be",
+                0x0044,                
+                0xC7,  
+                2,
+                "P0590 EOC Minimum Frequency",
+                "HZ",
+                "EOC Minimum Frequency",
+                120,4000,200,
+                1,1,1,0,
+                ,,,,
+                1; 
+
+       Param173=
+                0,
+                6,"20 69 24 01 30 bf",
+                0x000,                
+                0xC7,  
+                2,
+                "P0591 EOC Hysteresis",
+                "%",
+                "EOC Hysteresis",
+                0,30,10,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param174=
+                0,
+                6,"20 6a 24 01 30 b4",
+                0x0030,                
+                0xC7,  
+                2,
+                "P0680 Logical Status",
+                "",
+                "Logical Status",
+                0,65535,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param175=
+                0,
+                6,"20 6a 24 01 30 b5",
+                0x0030,                
+                0xC3,  
+                2,
+                "P0681 13-Bit Speed",
+                "",
+                "13-Bit Speed",
+                -32768,32767,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param176=
+                0,
+                6,"20 6a 24 01 30 b8",
+                0x0020,                
+                0xC7,  
+                2,
+                "P0684 CO/DN Control",
+                "",
+                "CO/DN Control",
+                0,65535,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param177=
+                0,
+                6,"20 6a 24 01 30 b9",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0685 CO/DN Speed Ref",
+                "",
+                "CO/DN Speed Ref",
+                -32768,32767,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param178=
+                0,
+                6,"20 6a 24 01 30 be",
+                0x0030,                
+                0xC7,  
+                2,
+                "P0690 Logic State 2",
+                "",
+                "Logic State 2",
+                0,65535,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param179=
+                0,
+                6,"20 6b 24 01 30 67",
+                0x002,                
+                0xC7,  
+                2,
+                "P0703 Bus Off Reset",
+                "",
+                "Bus Off Reset",
+                0,1,1,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param180=
+                0,
+                6,"20 6b 24 01 30 69",
+                0x0012,                
+                0xC7,  
+                2,
+                "P0705 CAN Controller Status",
+                "",
+                "CAN Controller Status",
+                0,6,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param181=
+                0,
+                6,"20 6b 24 01 30 6a",
+                0x0010,                
+                0xC7,  
+                2,
+                "P0706 RX CAN Telegrams",
+                "",
+                "RX CAN Telegrams",
+                0,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param182=
+                0,
+                6,"20 6b 24 01 30 6b",
+                0x0010,                
+                0xC7,  
+                2,
+                "P0707 TX CAN Telegrams",
+                "",
+                "TX CAN Telegrams",
+                0,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param183=
+                0,
+                6,"20 6b 24 01 30 6c",
+                0x0010,                
+                0xC7,  
+                2,
+                "P0708 Bus Off Counter",
+                "",
+                "Bus Off Counter",
+                0,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param184=
+                0,
+                6,"20 6b 24 01 30 6d",
+                0x0010,                
+                0xC7,  
+                2,
+                "P0709 CAN Lost Messages",
+                "",
+                "CAN Lost Messages",
+                0,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param185=
+                0,
+                6,"20 6b 24 01 30 6e",
+                0x002,                
+                0xC7,  
+                2,
+                "P0710 DeviceNet I/O instances",
+                "",
+                "DeviceNet I/O instances",
+                0,6,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param186=
+                0,
+                6,"20 6b 24 01 30 6f",
+                0x000,                
+                0xC7,  
+                2,
+                "P0711 DeviceNet Read Word #3",
+                "",
+                "DeviceNet Read Word #3",
+                0,1199,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param187=
+                0,
+                6,"20 6b 24 01 30 70",
+                0x000,                
+                0xC7,  
+                2,
+                "P0712 DeviceNet Read Word #4",
+                "",
+                "DeviceNet Read Word #4",
+                0,1199,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param188=
+                0,
+                6,"20 6b 24 01 30 71",
+                0x000,                
+                0xC7,  
+                2,
+                "P0713 DeviceNet Read Word #5",
+                "",
+                "DeviceNet Read Word #5",
+                0,1199,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param189=
+                0,
+                6,"20 6b 24 01 30 72",
+                0x000,                
+                0xC7,  
+                2,
+                "P0714 DeviceNet Read Word #6",
+                "",
+                "DeviceNet Read Word #6",
+                0,1199,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param190=
+                0,
+                6,"20 6b 24 01 30 73",
+                0x000,                
+                0xC7,  
+                2,
+                "P0715 DeviceNet Write Word #3",
+                "",
+                "DeviceNet Write Word #3",
+                0,1199,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param191=
+                0,
+                6,"20 6b 24 01 30 74",
+                0x000,                
+                0xC7,  
+                2,
+                "P0716 DeviceNet Write Word #4",
+                "",
+                "DeviceNet Write Word #4",
+                0,1199,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param192=
+                0,
+                6,"20 6b 24 01 30 75",
+                0x000,                
+                0xC7,  
+                2,
+                "P0717 DeviceNet Write Word #5",
+                "",
+                "DeviceNet Write Word #5",
+                0,1199,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param193=
+                0,
+                6,"20 6b 24 01 30 76",
+                0x000,                
+                0xC7,  
+                2,
+                "P0718 DeviceNet Write Word #6",
+                "",
+                "DeviceNet Write Word #6",
+                0,1199,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param194=
+                0,
+                6,"20 6b 24 01 30 77",
+                0x0012,                
+                0xC7,  
+                2,
+                "P0719 DeviceNet Network Status",
+                "",
+                "DeviceNet Network Status",
+                0,5,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param195=
+                0,
+                6,"20 6b 24 01 30 78",
+                0x0012,                
+                0xC7,  
+                2,
+                "P0720 DeviceNet Master Status",
+                "",
+                "DeviceNet Master Status",
+                0,1,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param196=
+                0,
+                6,"20 6b 24 01 30 a0",
+                0x000,                
+                0xC7,  
+                2,
+                "P0760 BACnet Dev Inst Hi",
+                "",
+                "BACnet Dev Inst Hi",
+                0,419,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param197=
+                0,
+                6,"20 6b 24 01 30 a1",
+                0x000,                
+                0xC7,  
+                2,
+                "P0761 BACnet Dev Inst Lo",
+                "",
+                "BACnet Dev Inst Lo",
+                0,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param198=
+                0,
+                6,"20 6b 24 01 30 a2",
+                0x000,                
+                0xC7,  
+                2,
+                "P0762 Max Number of master",
+                "",
+                "Max Number of master",
+                0,127,127,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param199=
+                0,
+                6,"20 6b 24 01 30 a3",
+                0x000,                
+                0xC7,  
+                2,
+                "P0763 MS/TP Max info Frame",
+                "",
+                "MS/TP Max info Frame",
+                1,65535,1,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param200=
+                0,
+                6,"20 6b 24 01 30 a4",
+                0x002,                
+                0xC7,  
+                2,
+                "P0764 I-AM Msg transmition",
+                "",
+                "I-AM Msg transmition",
+                0,1,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param201=
+                0,
+                6,"20 6b 24 01 30 a5",
+                0x0010,                
+                0xC7,  
+                2,
+                "P0765 Token RX Quantity",
+                "",
+                "Token RX Quantity",
+                0,65535,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param202=
+                0,
+                6,"20 6c 24 01 30 8c",
+                0x0010,                
+                0xC7,  
+                2,
+                "P0840 IR Control Command",
+                "",
+                "IR Control Command",
+                0,65535,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param203=
+                0,
+                6,"20 6c 24 01 30 8e",
+                0x000,                
+                0xC7,  
+                2,
+                "P0842 Quick View 1 IR",
+                "",
+                "Quick View 1 IR",
+                0,959,2,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param204=
+                0,
+                6,"20 6c 24 01 30 8f",
+                0x000,                
+                0xC7,  
+                2,
+                "P0843 Quick View 2 IR",
+                "",
+                "Quick View 2 IR",
+                0,959,375,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param205=
+                0,
+                6,"20 6d 24 01 30 64",
+                0x0012,                
+                0xC7,  
+                2,
+                "P0900 SoftPLC Status",
+                "",
+                "SoftPLC Status",
+                0,4,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param206=
+                0,
+                6,"20 6d 24 01 30 65",
+                0x002,                
+                0xC7,  
+                2,
+                "P0901 SoftPLC Command",
+                "",
+                "SoftPLC Command",
+                0,1,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param207=
+                0,
+                6,"20 6d 24 01 30 66",
+                0x0054,                
+                0xC7,  
+                2,
+                "P0902 Scan Cycle Time",
+                "s",
+                "Scan Cycle Time",
+                0,9999,0,
+                1,1,1,0,
+                ,,,,
+                3; 
+
+       Param208=
+                0,
+                6,"20 6d 24 01 30 67",
+                0x002,                
+                0xC7,  
+                2,
+                "P0903 SoftPLC Appl.",
+                "",
+                "SoftPLC Appl.",
+                0,1,1,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param209=
+                0,
+                6,"20 6d 24 01 30 68",
+                0x002,                
+                0xC7,  
+                2,
+                "P0904 Action for SoftPLC Application not Running",
+                "",
+                "Action for SoftPLC Application not Running",
+                0,2,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param210=
+                0,
+                6,"20 6d 24 01 30 6e",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0910 SoftPLC Parameter 1",
+                "",
+                "SoftPLC Parameter 1",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param211=
+                0,
+                6,"20 6d 24 01 30 6f",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0911 SoftPLC Parameter 2",
+                "",
+                "SoftPLC Parameter 2",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param212=
+                0,
+                6,"20 6d 24 01 30 70",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0912 SoftPLC Parameter 3",
+                "",
+                "SoftPLC Parameter 3",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param213=
+                0,
+                6,"20 6d 24 01 30 71",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0913 SoftPLC Parameter 4",
+                "",
+                "SoftPLC Parameter 4",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param214=
+                0,
+                6,"20 6d 24 01 30 72",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0914 SoftPLC Parameter 5",
+                "",
+                "SoftPLC Parameter 5",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param215=
+                0,
+                6,"20 6d 24 01 30 73",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0915 SoftPLC Parameter 6",
+                "",
+                "SoftPLC Parameter 6",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param216=
+                0,
+                6,"20 6d 24 01 30 74",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0916 SoftPLC Parameter 7",
+                "",
+                "SoftPLC Parameter 7",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param217=
+                0,
+                6,"20 6d 24 01 30 75",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0917 SoftPLC Parameter 8",
+                "",
+                "SoftPLC Parameter 8",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param218=
+                0,
+                6,"20 6d 24 01 30 76",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0918 SoftPLC Parameter 9",
+                "",
+                "SoftPLC Parameter 9",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param219=
+                0,
+                6,"20 6d 24 01 30 77",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0919 SoftPLC Parameter 10",
+                "",
+                "SoftPLC Parameter 10",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param220=
+                0,
+                6,"20 6d 24 01 30 78",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0920 SoftPLC Parameter 11",
+                "",
+                "SoftPLC Parameter 11",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param221=
+                0,
+                6,"20 6d 24 01 30 79",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0921 SoftPLC Parameter 12",
+                "",
+                "SoftPLC Parameter 12",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param222=
+                0,
+                6,"20 6d 24 01 30 7a",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0922 SoftPLC Parameter 13",
+                "",
+                "SoftPLC Parameter 13",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param223=
+                0,
+                6,"20 6d 24 01 30 7b",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0923 SoftPLC Parameter 14",
+                "",
+                "SoftPLC Parameter 14",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param224=
+                0,
+                6,"20 6d 24 01 30 7c",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0924 SoftPLC Parameter 15",
+                "",
+                "SoftPLC Parameter 15",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param225=
+                0,
+                6,"20 6d 24 01 30 7d",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0925 SoftPLC Parameter 16",
+                "",
+                "SoftPLC Parameter 16",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param226=
+                0,
+                6,"20 6d 24 01 30 7e",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0926 SoftPLC Parameter 17",
+                "",
+                "SoftPLC Parameter 17",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param227=
+                0,
+                6,"20 6d 24 01 30 7f",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0927 SoftPLC Parameter 18",
+                "",
+                "SoftPLC Parameter 18",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param228=
+                0,
+                6,"20 6d 24 01 30 80",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0928 SoftPLC Parameter 19",
+                "",
+                "SoftPLC Parameter 19",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param229=
+                0,
+                6,"20 6d 24 01 30 81",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0929 SoftPLC Parameter 20",
+                "",
+                "SoftPLC Parameter 20",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param230=
+                0,
+                6,"20 6d 24 01 30 82",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0930 SoftPLC Parameter 21",
+                "",
+                "SoftPLC Parameter 21",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param231=
+                0,
+                6,"20 6d 24 01 30 83",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0931 SoftPLC Parameter 22",
+                "",
+                "SoftPLC Parameter 22",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param232=
+                0,
+                6,"20 6d 24 01 30 84",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0932 SoftPLC Parameter 23",
+                "",
+                "SoftPLC Parameter 23",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param233=
+                0,
+                6,"20 6d 24 01 30 85",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0933 SoftPLC Parameter 24",
+                "",
+                "SoftPLC Parameter 24",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param234=
+                0,
+                6,"20 6d 24 01 30 86",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0934 SoftPLC Parameter 25",
+                "",
+                "SoftPLC Parameter 25",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param235=
+                0,
+                6,"20 6d 24 01 30 87",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0935 SoftPLC Parameter 26",
+                "",
+                "SoftPLC Parameter 26",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param236=
+                0,
+                6,"20 6d 24 01 30 88",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0936 SoftPLC Parameter 27",
+                "",
+                "SoftPLC Parameter 27",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param237=
+                0,
+                6,"20 6d 24 01 30 89",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0937 SoftPLC Parameter 28",
+                "",
+                "SoftPLC Parameter 28",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param238=
+                0,
+                6,"20 6d 24 01 30 8a",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0938 SoftPLC Parameter 29",
+                "",
+                "SoftPLC Parameter 29",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param239=
+                0,
+                6,"20 6d 24 01 30 8b",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0939 SoftPLC Parameter 30",
+                "",
+                "SoftPLC Parameter 30",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param240=
+                0,
+                6,"20 6d 24 01 30 8c",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0940 SoftPLC Parameter 31",
+                "",
+                "SoftPLC Parameter 31",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param241=
+                0,
+                6,"20 6d 24 01 30 8d",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0941 SoftPLC Parameter 32",
+                "",
+                "SoftPLC Parameter 32",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param242=
+                0,
+                6,"20 6d 24 01 30 8e",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0942 SoftPLC Parameter 33",
+                "",
+                "SoftPLC Parameter 33",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param243=
+                0,
+                6,"20 6d 24 01 30 8f",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0943 SoftPLC Parameter 34",
+                "",
+                "SoftPLC Parameter 34",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param244=
+                0,
+                6,"20 6d 24 01 30 90",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0944 SoftPLC Parameter 35",
+                "",
+                "SoftPLC Parameter 35",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param245=
+                0,
+                6,"20 6d 24 01 30 91",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0945 SoftPLC Parameter 36",
+                "",
+                "SoftPLC Parameter 36",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param246=
+                0,
+                6,"20 6d 24 01 30 92",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0946 SoftPLC Parameter 37",
+                "",
+                "SoftPLC Parameter 37",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param247=
+                0,
+                6,"20 6d 24 01 30 93",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0947 SoftPLC Parameter 38",
+                "",
+                "SoftPLC Parameter 38",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param248=
+                0,
+                6,"20 6d 24 01 30 94",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0948 SoftPLC Parameter 39",
+                "",
+                "SoftPLC Parameter 39",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param249=
+                0,
+                6,"20 6d 24 01 30 95",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0949 SoftPLC Parameter 40",
+                "",
+                "SoftPLC Parameter 40",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param250=
+                0,
+                6,"20 6d 24 01 30 96",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0950 SoftPLC Parameter 41",
+                "",
+                "SoftPLC Parameter 41",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param251=
+                0,
+                6,"20 6d 24 01 30 97",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0951 SoftPLC Parameter 42",
+                "",
+                "SoftPLC Parameter 42",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param252=
+                0,
+                6,"20 6d 24 01 30 98",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0952 SoftPLC Parameter 43",
+                "",
+                "SoftPLC Parameter 43",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param253=
+                0,
+                6,"20 6d 24 01 30 99",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0953 SoftPLC Parameter 44",
+                "",
+                "SoftPLC Parameter 44",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param254=
+                0,
+                6,"20 6d 24 01 30 9a",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0954 SoftPLC Parameter 45",
+                "",
+                "SoftPLC Parameter 45",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param255=
+                0,
+                6,"20 6d 24 01 30 9b",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0955 SoftPLC Parameter 46",
+                "",
+                "SoftPLC Parameter 46",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param256=
+                0,
+                6,"20 6d 24 01 30 9c",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0956 SoftPLC Parameter 47",
+                "",
+                "SoftPLC Parameter 47",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param257=
+                0,
+                6,"20 6d 24 01 30 9d",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0957 SoftPLC Parameter 48",
+                "",
+                "SoftPLC Parameter 48",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param258=
+                0,
+                6,"20 6d 24 01 30 9e",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0958 SoftPLC Parameter 49",
+                "",
+                "SoftPLC Parameter 49",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0; 
+
+       Param259=
+                0,
+                6,"20 6d 24 01 30 9f",
+                0x0020,                
+                0xC3,  
+                2,
+                "P0959 SoftPLC Parameter 50",
+                "",
+                "SoftPLC Parameter 50",
+                -9999,9999,0,
+                ,,,,
+                ,,,,
+                0;     
+  
+$ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+[EnumPar]
+$ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+    
+    Param6=               
+         "Ready",         
+            "Run",         
+            "Undervoltage",         
+            "Fault",         
+            "Self-Tuning",         
+            "Configuration",         
+            "DC Braking",         
+            "Reserved",         
+            "Fire Mode";
+        
+    Param18=               
+         "Without Accessory",         
+            "CFW100-HMIR",         
+            "CFW100-IOAR",         
+            "CFW100-CCAN",         
+            "Reserved",         
+            "CFW100-IODR",         
+            "CFW100-IOADR",         
+            "CFW100-IOA",         
+            "CFW100-IOD",         
+            "Reserved",         
+            "CFW100-IOP",         
+            "CFW100-CBLT";
+        
+    Param19=               
+         "Not identified",         
+            "1.6 A/110 V",         
+            "2.6 A/110 V",         
+            "4.2 A/110 V",         
+            "6.0 A/110 V",         
+            "1.6 A/220 V",         
+            "2.6 A/220 V",         
+            "4.2 A/220 V",         
+            "6.0 A/220 V",         
+            "7.3 A/220 V";
+        
+    Param27=               
+         "Out of CONFIG status. The HMI and parameters P006 and P680 must not indicate ConF.",         
+            "Two or more DIx (P263...P270) programmed for (4 = Forward Run).",         
+            "Two or more DIx (P263...P270) programmed for (5 = Reverse Run).",         
+            "Two or more DIx (P263...P270) programmed for (6 = Start).",         
+            "Two or more DIx (P263...P270) programmed for (7 = Stop).",         
+            "Two or more DIx (P263...P270) programmed for (8 = Direction of Rotation).",         
+            "Two or more DIx (P263...P270) programmed for (9 = LOC/REM).",         
+            "Two or more DIx (P263...P270) programmed for (11 = Accelerate E.P.).",         
+            "Two or more DIx (P263...P270) programmed for (12 = Decelerate E.P.).",         
+            "Two or more DIx (P263...P270) programmed for (14 = 2nd Ramp).",         
+            "Reserved",         
+            "Two or more DIx (P263...P270) programmed for (24 = Disable Flying Start).",         
+            "Two or more DIx (P263...P270) programmed for (26 = Programming Off).",         
+            "Reserved",         
+            "Reserved",         
+            "DIx (P263...P270) programmed for (4 = Forward Run) without DIx (P263...P270) programmed for (5 = Reverse Run) or the opposite.",         
+            "DIx (P263...P270) programmed for (6 = Start) without DIx (P263...P270) programmed for (7 = Stop) or the opposite.",         
+            "P221 or P222 programmed for (8 = Multispeed) without DIx (P263...P270) programmed for (13 = Multispeed) or the opposite.",         
+            "P221 or P222 programmed for (7 = E.P.) without DIx (P263...P270) programmed for (11 = Accelerate E.P) or the opposite.",         
+            "P224 programmed for (1 = DIx) OR P227 programmed for (1 = DIx) without DIx (P263...P270) programmed for (1 = Run/Stop) AND without DIx (P263...P270) programmed for (2 = General Enable) AND without DIx (P263...P270) programmed for (3 = Quick Stop) AND without DIx (P263...P270) programmed for (4 = Forward Run) AND without DIx (P263...P270) programmed for (6 = Start).",         
+            "Reserved",         
+            "P221 or P222 programmed for (8 = Multispeed) with DI1 (P263) AND DI2 (P264) OR DI1 (P263) AND DI5 (P267) OR DI1 (P263) AND DI6 (P268) OR DI2 (P264) AND DI5 (P267) OR DI2 (P264) AND DI6 (P268) OR DI5 (P267) AND DI6 (P268) programmed for (13 = Multispeed).",         
+            "Minimum Frequency Reference (P133) greater than Maximum Frequency Reference (P134) OR Intermediate Frequency (P146) greater than Field Weakening Speed (P145).",         
+            "Reserved",         
+            "Reserved",         
+            "Reserved",         
+            "Reserved",         
+            "Reserved",         
+            "Reserved",         
+            "Two or more DIx (P263 ... P270) programmed for (49 = Enable Fire Mode) OR two or more DOx (P275 ... P278) programmed for (45 = Fire Mode) OR P580 programmed for 1, 2 ou 4 (Fire Mode Active) without DIx programmed for (49 = Activate Fire Mode) OR DIx programmed for (49 = Activate Fire Mode) or DOx programmed for (47 = Fire Mode) and P580 programmed for (0 = Fire Mode Inactive) ou (3 = Reserved)",         
+            "Reserved",         
+            "Reserved",         
+            "Reserved",         
+            "Parameterization in conflict with DC Bus Compensation. Energy Saver active (P588 value other than zero), Controle VVW ativo (P202 = 5), Functions Ride-Through or Flying Start are enable (P320 value other than zero)";
+        
+    Param45=               
+         "Inactive",         
+            "Active";
+        
+    Param46=               
+         "1st Ramp",         
+            "2nd Ramp",         
+            "DIx",         
+            "Serial/USB",         
+            "Reserved",         
+            "CO/DN",         
+            "SoftPLC";
+        
+    Param49=               
+         "Inactive",         
+            "Active",         
+            "Backup by P121";
+        
+    Param72=               
+         "Inactive",         
+            "Standard",         
+            "Overmodulation",         
+            "Extended";
+        
+    Param73=               
+         "hold_Ud and decel_LC",         
+            "accel_Ud and decel_LC",         
+            "hold_Ud and hold_LC",         
+            "accel_Ud and hold_LC";
+        
+    Param80=               
+         "V/f",         
+            "Quadratic V/f ",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "VVW";
+        
+    Param81=               
+         "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Load 60 Hz",         
+            "Load 50 Hz",         
+            "Load User",         
+            "Not Used",         
+            "Save User",         
+            "Not Used",         
+            "Load Default SoftPLC",         
+            "Reserved",         
+            "Reserved";
+        
+    Param85=               
+         "Without unit",         
+            "Without unit",         
+            "Volt (V)",         
+            "Hertz (Hz)",         
+            "Without unit",         
+            "Percent (%)",         
+            "Without unit",         
+            "Rotation/min. (rpm)";
+        
+    Param86=               
+         "wxyz",         
+            "wxy.z",         
+            "wx.yz",         
+            "w.xyz";
+        
+    Param89=               
+         "Always Local",         
+            "Always Remote",         
+            "Not Used",         
+            "Not Used",         
+            "DIx",         
+            "Serial/USB (LOC)",         
+            "Serial/USB (REM)",         
+            "Not Used",         
+            "Not Used",         
+            "CO/DN (LOC)",         
+            "CO/DN (REM)",         
+            "SoftPLC";
+        
+    Param90=               
+         "HMI",         
+            "AI1",         
+            "Not Used",         
+            "Potentiometer",         
+            "FI",         
+            "Not Used",         
+            "Not Used",         
+            "E.P.",         
+            "Multispeed",         
+            "Serial/USB",         
+            "Not Used",         
+            "CO/DN",         
+            "SoftPLC",         
+            "Not Used",         
+            "AI1 > 0",         
+            "Not Used",         
+            "Potentiometer > 0",         
+            "FI > 0";
+        
+    Param91=               
+         "HMI",         
+            "AI1",         
+            "Not Used",         
+            "Potentiometer",         
+            "FI",         
+            "Not Used",         
+            "Not Used",         
+            "E.P.",         
+            "Multispeed",         
+            "Serial/USB",         
+            "Not Used",         
+            "CO/DN",         
+            "SoftPLC",         
+            "Not Used",         
+            "AI1 > 0",         
+            "Not Used",         
+            "Potentiometer > 0",         
+            "FI > 0";
+        
+    Param92=               
+         "Forward",         
+            "Reverse",         
+            "Not Used",         
+            "Not Used",         
+            "DIx",         
+            "Serial/USB (FWD)",         
+            "Serial/USB (REV)",         
+            "Not Used",         
+            "Not Used",         
+            "CO/DN (FWD)",         
+            "CO/DN (REV)",         
+            "Not Used",         
+            "SoftPLC";
+        
+    Param93=               
+         "HMI Keys",         
+            "DIx",         
+            "Serial/USB",         
+            "Not Used",         
+            "CO/DN",         
+            "SoftPLC";
+        
+    Param94=               
+         "Disabled",         
+            "Not Used",         
+            "DIx",         
+            "Serial/USB",         
+            "Not Used",         
+            "CO/DN",         
+            "SoftPLC";
+        
+    Param95=               
+         "Forward",         
+            "Reverse",         
+            "Not Used",         
+            "Not Used",         
+            "DIx",         
+            "Serial/USB (FWD)",         
+            "Serial/USB (REV)",         
+            "Not Used",         
+            "Not Used",         
+            "CO/DN (FWD)",         
+            "CO/DN (REV)",         
+            "Not Used",         
+            "SoftPLC";
+        
+    Param96=               
+         "HMI Keys",         
+            "DIx",         
+            "Serial/USB",         
+            "Not Used",         
+            "CO/DN",         
+            "SoftPLC";
+        
+    Param97=               
+         "Disabled",         
+            "Not Used",         
+            "DIx",         
+            "Serial/USB",         
+            "Not Used",         
+            "CO/DN",         
+            "SoftPLC";
+        
+    Param98=               
+         "Ramp to Stop",         
+            "Coast to Stop";
+        
+    Param99=               
+         "Inactive",         
+            "Active";
+        
+    Param100=               
+         "Speed Ref.",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "PTC",         
+            "Not Used",         
+            "Not Used",         
+            "PLC Use",         
+            "Application Function 1",         
+            "Application Function 2",         
+            "Application Function 3",         
+            "Application Function 4",         
+            "Application Function 5",         
+            "Application Function 6",         
+            "Application Function 7",         
+            "Application Function 8",         
+            "Control Setpoint",         
+            "Process Variable";
+        
+    Param102=               
+         "0 to 10 V / 20 mA",         
+            "4 to 20 mA",         
+            "10 V / 20 mA to 0",         
+            "20 to 4 mA";
+        
+    Param105=               
+         "Speed Ref.",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "SoftPLC",         
+            "Application Function 1",         
+            "Application Function 2",         
+            "Application Function 3",         
+            "Application Function 4",         
+            "Application Function 5",         
+            "Application Function 6",         
+            "Application Function 7",         
+            "Application Function 8",         
+            "Not Used",         
+            "Not Used";
+        
+    Param109=               
+         "Inactive",         
+            "Active in DI1",         
+            "Active in DI2",         
+            "Active in DI3",         
+            "Active in DI4";
+        
+    Param114=               
+         "Speed Ref.",         
+            "Not Used",         
+            "Real Speed",         
+            "Not Used",         
+            "Not Used",         
+            "Output Current",         
+            "Not Used",         
+            "Active Current",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Motor Torque",         
+            "SoftPLC",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Motor Ixt",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Application Function 1",         
+            "Application Function 2",         
+            "Application Function 3",         
+            "Application Function 4",         
+            "Application Function 5",         
+            "Application Function 6",         
+            "Application Function 7",         
+            "Application Function 8",         
+            "Control Setpoint",         
+            "Process Variable";
+        
+    Param116=               
+         "0 to 10 V",         
+            "0 to 20 mA",         
+            "4 to 20 mA",         
+            "10 to 0 V",         
+            "20 to 0 mA",         
+            "20 to 4 mA";
+        
+    Param117=               
+         "Not Used",         
+            "Run/Stop",         
+            "General Enable",         
+            "Quick Stop",         
+            "Forward Run",         
+            "Reverse Run",         
+            "Start",         
+            "Stop",         
+            "Direction of Rotation",         
+            "LOC/REM",         
+            "JOG",         
+            "Accelerate E.P.",         
+            "Decelerate E.P.",         
+            "Multispeed",         
+            "2nd Ramp",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "No Ext. Alarm",         
+            "No Ext. Fault",         
+            "Reset",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Disab. Flying Start",         
+            "Not Used",         
+            "Lock Prog.",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "2nd Ramp Multispeed",         
+            "2nd Ramp Increase E.P.",         
+            "2nd Ramp Decrease E.P.",         
+            "2nd Ramp FWD Run",         
+            "2nd Ramp REV Run",         
+            "Start / Inc. E.P.",         
+            "Dec. E.P. / Stop",         
+            "Stop",         
+            "Safety Switch",         
+            "Application Function 1",         
+            "Application Function 2",         
+            "Application Function 3",         
+            "Application Function 4",         
+            "Application Function 5",         
+            "Application Function 6",         
+            "Application Function 7",         
+            "Application Function 8",         
+            "Enable Fire Mode",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Run/Stop with Line Start Lockout",         
+            "Forward Run with Line Start Lockout",         
+            "Reverse Run with Line Start Lockout";
+        
+    Param118=               
+         "Not Used",         
+            "Run/Stop",         
+            "General Enable",         
+            "Quick Stop",         
+            "Forward Run",         
+            "Reverse Run",         
+            "Start",         
+            "Stop",         
+            "Direction of Rotation",         
+            "LOC/REM",         
+            "JOG",         
+            "Accelerate E.P.",         
+            "Decelerate E.P.",         
+            "Multispeed",         
+            "2nd Ramp",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "No Ext. Alarm",         
+            "No Ext. Fault",         
+            "Reset",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Disab.FlyStart",         
+            "Not Used",         
+            "Progr. Off",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "2nd Ramp Multispeed",         
+            "2nd Ramp Increase E.P.",         
+            "2nd Ramp Decrease E.P.",         
+            "2nd Ramp FWD Run",         
+            "2nd Ramp REV Run",         
+            "Turn ON / Ac. E.P.",         
+            "De. E.P. / Turn OFF",         
+            "Stop",         
+            "Safety Switch",         
+            "Application Function 1",         
+            "Application Function 2",         
+            "Application Function 3",         
+            "Application Function 4",         
+            "Application Function 5",         
+            "Application Function 6",         
+            "Application Function 7",         
+            "Application Function 8",         
+            "Enable Fire Mode",         
+            "PID Manual / Automatic",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Run/Stop with Line Start Lockout",         
+            "Forward Run with Line Start Lockout",         
+            "Reverse Run with Line Start Lockout";
+        
+    Param119=               
+         "Not Used",         
+            "Run/Stop",         
+            "General Enable",         
+            "Quick Stop",         
+            "Forward Run",         
+            "Reverse Run",         
+            "Start",         
+            "Stop",         
+            "Direction of Rotation",         
+            "LOC/REM",         
+            "JOG",         
+            "Accelerate E.P.",         
+            "Decelerate E.P.",         
+            "Multispeed",         
+            "2nd Ramp",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "No Ext. Alarm",         
+            "No Ext. Fault",         
+            "Reset",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Disab.FlyStart",         
+            "Not Used",         
+            "Lock Prog.",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "2nd Ramp Multispeed",         
+            "2nd Ramp Increase E.P.",         
+            "2nd Ramp Decrease E.P.",         
+            "2nd Ramp FWD Run",         
+            "2nd Ramp REV Run",         
+            "Start / Inc. E.P.",         
+            "Dec. E.P. / Stop",         
+            "Stop",         
+            "Safety Switch",         
+            "Application Function 1",         
+            "Application Function 2",         
+            "Application Function 3",         
+            "Application Function 4",         
+            "Application Function 5",         
+            "Application Function 6",         
+            "Application Function 7",         
+            "Application Function 8",         
+            "Enable Fire Mode",         
+            "Not Used",         
+            "Command to Increase the Control Setpoint (EP)",         
+            "Not Used",         
+            "1st DI for Control Setpoint Selection",         
+            "Not Used",         
+            "Run/Stop with Line Start Lockout",         
+            "Forward Run with Line Start Lockout",         
+            "Reverse Run with Line Start Lockout";
+        
+    Param120=               
+         "Not Used",         
+            "Run/Stop",         
+            "General Enable",         
+            "Quick Stop",         
+            "Forward Run",         
+            "Reverse Run",         
+            "Start",         
+            "Stop",         
+            "Direction of Rotation",         
+            "LOC/REM",         
+            "JOG",         
+            "Accelerate E.P.",         
+            "Decelerate E.P.",         
+            "Multispeed",         
+            "2nd Ramp",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "No Ext. Alarm",         
+            "No Ext. Fault",         
+            "Reset",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Disab.FlyStart",         
+            "Not Used",         
+            "Progr. Off",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "2nd Ramp Multispeed",         
+            "2nd Ramp Increase E.P.",         
+            "2nd Ramp Decrease E.P.",         
+            "2nd Ramp FWD Run",         
+            "2nd Ramp REV Run",         
+            "Start / Inc. E.P.",         
+            "Dec. E.P. / Stop",         
+            "Stop",         
+            "Safety Switch",         
+            "Application Function 1",         
+            "Application Function 2",         
+            "Application Function 3",         
+            "Application Function 4",         
+            "Application Function 5",         
+            "Application Function 6",         
+            "Application Function 7",         
+            "Application Function 8",         
+            "Enable Fire Mode",         
+            "Not Used",         
+            "Not Used",         
+            "Command to Decrease the Control Setpoint (EP)",         
+            "Not Used",         
+            "2nd DI for Control Setpoint Selection",         
+            "Run/Stop with Line Start Lockout",         
+            "Forward Run with Line Start Lockout",         
+            "Reverse Run with Line Start Lockout";
+        
+    Param121=               
+         "Not Used",         
+            "Run/Stop",         
+            "General Enable",         
+            "Quick Stop",         
+            "Forward Run",         
+            "Reverse Run",         
+            "Start",         
+            "Stop",         
+            "Direction of Rotation",         
+            "LOC/REM",         
+            "JOG",         
+            "Accelerate E.P.",         
+            "Decelerate E.P.",         
+            "Multispeed",         
+            "2nd Ramp",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "No Ext. Alarm",         
+            "No Ext. Fault",         
+            "Reset",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Disab. Flying Start",         
+            "Not Used",         
+            "Lock Prog.",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "2nd Ramp Multispeed",         
+            "2nd Ramp Increase E.P.",         
+            "2nd Ramp Decrease E.P.",         
+            "2nd Ramp FWD Run",         
+            "2nd Ramp REV Run",         
+            "Start / Inc. E.P.",         
+            "Dec. E.P. / Stop",         
+            "Stop",         
+            "Safety Switch",         
+            "Application Function 1",         
+            "Application Function 2",         
+            "Application Function 3",         
+            "Application Function 4",         
+            "Application Function 5",         
+            "Application Function 6",         
+            "Application Function 7",         
+            "Application Function 8",         
+            "Enable Fire Mode",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Run/Stop with Line Start Lockout",         
+            "Forward Run with Line Start Lockout",         
+            "Reverse Run with Line Start Lockout";
+        
+    Param122=               
+         "Not Used",         
+            "Run/Stop",         
+            "General Enable",         
+            "Quick Stop",         
+            "Forward Run",         
+            "Reverse Run",         
+            "Start",         
+            "Stop",         
+            "Direction of Rotation",         
+            "LOC/REM",         
+            "JOG",         
+            "Accelerate E.P.",         
+            "Decelerate E.P.",         
+            "Multispeed",         
+            "2nd Ramp",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "No Ext. Alarm",         
+            "No Ext. Fault",         
+            "Reset",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Disab. Flying Start",         
+            "Not Used",         
+            "Lock Prog.",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "2nd Ramp Multispeed",         
+            "2nd Ramp Increase E.P.",         
+            "2nd Ramp Decrease E.P.",         
+            "2nd Ramp FWD Run",         
+            "2nd Ramp REV Run",         
+            "Start / Inc. E.P.",         
+            "Dec. E.P. / Stop",         
+            "Stop",         
+            "Safety Switch",         
+            "Application Function 1",         
+            "Application Function 2",         
+            "Application Function 3",         
+            "Application Function 4",         
+            "Application Function 5",         
+            "Application Function 6",         
+            "Application Function 7",         
+            "Application Function 8",         
+            "Enable Fire Mode",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Run/Stop with Line Start Lockout",         
+            "Forward Run with Line Start Lockout",         
+            "Reverse Run with Line Start Lockout";
+        
+    Param123=               
+         "Not Used",         
+            "Run/Stop",         
+            "General Enable",         
+            "Quick Stop",         
+            "Forward Run",         
+            "Reverse Run",         
+            "Start",         
+            "Stop",         
+            "Direction of Rotation",         
+            "LOC/REM",         
+            "JOG",         
+            "Accelerate E.P.",         
+            "Decelerate E.P.",         
+            "Multispeed",         
+            "2nd Ramp",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "No Ext. Alarm",         
+            "No Ext. Fault",         
+            "Reset",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Disab. Flying Start",         
+            "Not Used",         
+            "Lock Prog.",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "2nd Ramp Multispeed",         
+            "2nd Ramp Increase E.P.",         
+            "2nd Ramp Decrease E.P.",         
+            "2nd Ramp FWD Run",         
+            "2nd Ramp REV Run",         
+            "Start / Inc. E.P.",         
+            "Dec. E.P. / Stop",         
+            "Stop",         
+            "Safety Switch",         
+            "Application Function 1",         
+            "Application Function 2",         
+            "Application Function 3",         
+            "Application Function 4",         
+            "Application Function 5",         
+            "Application Function 6",         
+            "Application Function 7",         
+            "Application Function 8",         
+            "Enable Fire Mode",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Run/Stop with Line Start Lockout",         
+            "Forward Run with Line Start Lockout",         
+            "Reverse Run with Line Start Lockout";
+        
+    Param124=               
+         "Not Used",         
+            "Run/Stop",         
+            "General Enable",         
+            "Quick Stop",         
+            "Forward Run",         
+            "Reverse Run",         
+            "Start",         
+            "Stop",         
+            "Direction of Rotation",         
+            "LOC/REM",         
+            "JOG",         
+            "Accelerate E.P.",         
+            "Decelerate E.P.",         
+            "Multispeed",         
+            "2nd Ramp",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "No Ext. Alarm",         
+            "No Ext. Fault",         
+            "Reset",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Disab. Flying Start",         
+            "Not Used",         
+            "Lock Prog.",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "2nd Ramp Multispeed",         
+            "2nd Ramp Increase E.P.",         
+            "2nd Ramp Decrease E.P.",         
+            "2nd Ramp FWD Run",         
+            "2nd Ramp REV Run",         
+            "Start / Inc. E.P.",         
+            "Dec. E.P. / Stop",         
+            "Stop",         
+            "Safety Switch",         
+            "Application Function 1",         
+            "Application Function 2",         
+            "Application Function 3",         
+            "Application Function 4",         
+            "Application Function 5",         
+            "Application Function 6",         
+            "Application Function 7",         
+            "Application Function 8",         
+            "Enable Fire Mode",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Run/Stop with Line Start Lockout",         
+            "Forward Run with Line Start Lockout",         
+            "Reverse Run with Line Start Lockout";
+        
+    Param125=               
+         "(DI1..DI8) NPN",         
+            "(DI1..DI4) PNP",         
+            "(DI5..DI8) PNP",         
+            "(DI1..DI8) PNP";
+        
+    Param126=               
+         "Not Used",         
+            "F* ≥ Fx",         
+            "F ≥ Fx",         
+            "F ≤ Fx",         
+            "F = F*",         
+            "Not Used",         
+            "Is > Ix",         
+            "Is < Ix",         
+            "Torque > Tx",         
+            "Torque < Tx",         
+            "Remote",         
+            "Run",         
+            "Ready",         
+            "No Fault",         
+            "No F070",         
+            "Not Used",         
+            "No F021/F022",         
+            "Not Used",         
+            "No F072",         
+            "4-20 mA OK",         
+            "Not Used",         
+            "Forward",         
+            "Not Used",         
+            "Not Used",         
+            "Ride-Through",         
+            "Pre-Charge OK",         
+            "Fault",         
+            "Not Used",         
+            "SoftPLC",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "No Alarm",         
+            "Without fault and alarm",         
+            "Application Function 1",         
+            "Application Function 2",         
+            "Application Function 3",         
+            "Application Function 4",         
+            "Application Function 5",         
+            "Application Function 6",         
+            "Application Function 7",         
+            "Application Function 8",         
+            "Fire Mode ON",         
+            "Low Level of Process Variable",         
+            "High Level of Process Variable";
+        
+    Param127=               
+         "Not Used",         
+            "F* ≥ Fx",         
+            "F ≥ Fx",         
+            "F ≤ Fx",         
+            "F = F*",         
+            "Not Used",         
+            "Is > Ix",         
+            "Is < Ix",         
+            "Torque > Tx",         
+            "Torque < Tx",         
+            "Remote",         
+            "Run",         
+            "Ready",         
+            "No Fault",         
+            "No F070",         
+            "Not Used",         
+            "No F021/F022",         
+            "Not Used",         
+            "No F072",         
+            "4-20 mA OK",         
+            "Not Used",         
+            "Forward",         
+            "Not Used",         
+            "Not Used",         
+            "Ride-Through",         
+            "Pre-Charge OK",         
+            "Fault",         
+            "Not Used",         
+            "SoftPLC",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "No Alarm",         
+            "Without fault and alarm",         
+            "Application Function 1",         
+            "Application Function 2",         
+            "Application Function 3",         
+            "Application Function 4",         
+            "Application Function 5",         
+            "Application Function 6",         
+            "Application Function 7",         
+            "Application Function 8",         
+            "Fire Mode ON",         
+            "Low Level of Process Variable",         
+            "High Level of Process Variable";
+        
+    Param128=               
+         "Not Used",         
+            "F* ≥ Fx",         
+            "F ≥ Fx",         
+            "F ≤ Fx",         
+            "F = F*",         
+            "Not Used",         
+            "Is > Ix",         
+            "Is < Ix",         
+            "Torque > Tx",         
+            "Torque < Tx",         
+            "Remote",         
+            "Run",         
+            "Ready",         
+            "No Fault",         
+            "No F070",         
+            "Not Used",         
+            "No F021/F022",         
+            "Not Used",         
+            "No F072",         
+            "4-20 mA OK",         
+            "Not Used",         
+            "Forward",         
+            "Not Used",         
+            "Not Used",         
+            "Ride-Through",         
+            "Pre-Charge OK",         
+            "Fault",         
+            "Not Used",         
+            "SoftPLC",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "Not Used",         
+            "No Alarm",         
+            "Without fault and alarm",         
+            "Application Function 1",         
+            "Application Function 2",         
+            "Application Function 3",         
+            "Application Function 4",         
+            "Application Function 5",         
+            "Application Function 6",         
+            "Application Function 7",         
+            "Application Function 8",         
+            "Fire Mode ON",         
+            "Low Level of Process Variable",         
+            "High Level of Process Variable";
+        
+    Param134=               
+         "Reserved",         
+            "110 - 127 Vac",         
+            "200 - 240 Vac";
+        
+    Param144=               
+         "9600 bits/s",         
+            "19200 bits/s",         
+            "38400 bits/s",         
+            "57600 bits/s",         
+            "76800 bits/s";
+        
+    Param145=               
+         "8 bits, no, 1",         
+            "8 bits, even,1",         
+            "8 bits, odd, 1",         
+            "8 bits, no, 2",         
+            "8 bits, even,2",         
+            "8 bits, odd, 2";
+        
+    Param146=               
+         "Reserved",         
+            "Reserved",         
+            "Modbus RTU Slave",         
+            "BACnet",         
+            "Reserved",         
+            "ModBus RTU Master";
+        
+    Param147=               
+         "Inactive",         
+            "Ramp Stop",         
+            "General Disable",         
+            "Go to LOC",         
+            "LOC Keep Enab.",         
+            "Cause Fault";
+        
+    Param149=               
+         "Inactive",         
+            "Active",         
+            "Watchdog Error";
+        
+    Param150=               
+         "Inactive",         
+            "Flying Start",         
+            "FS / RT",         
+            "Ride-Through";
+        
+    Param154=               
+         "OFF",         
+            "ON",         
+            "CT";
+        
+    Param162=               
+         "0.16 HP (0.12 kW)",         
+            "0.25 HP (0.18 kW)",         
+            "0.33 HP (0.25 kW)",         
+            "0.50 HP (0.37 kW)",         
+            "0.75 HP (0.55 kW)",         
+            "1.00 HP (0.75 kW)",         
+            "1.50 HP (1.10 kW)",         
+            "2.00 HP (1.50 kW)";
+        
+    Param164=               
+         "No",         
+            "Yes";
+        
+    Param166=               
+         "Without unit",         
+            "Without unit",         
+            "Volt (V)",         
+            "Hertz (Hz)",         
+            "Without unit",         
+            "Percent (%)",         
+            "Without unit",         
+            "Rotation/min. (rpm)";
+        
+    Param167=               
+         "wxyz",         
+            "wxy.z",         
+            "wx.yz",         
+            "w.xyz";
+        
+    Param168=               
+         "Inactive",         
+            "Active",         
+            "Active / P134",         
+            "Reserved",         
+            "Active / General Disable ";
+        
+    Param169=               
+         "Limited",         
+            "Unlimited";
+        
+    Param179=               
+         "Manual",         
+            "Automatic";
+        
+    Param180=               
+         "Disabled",         
+            "Auto-baud",         
+            "CAN Active",         
+            "Warning",         
+            "Error Passive",         
+            "Bus Off",         
+            "No Bus Power";
+        
+    Param185=               
+         "ODVA Basic 2W",         
+            "ODVA Extend 2W",         
+            "Manuf.Spec.2W",         
+            "Manuf.Spec.3W",         
+            "Manuf.Spec.4W",         
+            "Manuf.Spec.5W",         
+            "Manuf.Spec.6W";
+        
+    Param194=               
+         "Offline",         
+            "OnLine, Not Conn",         
+            "OnLine, Connect.",         
+            "Connection Timed out",         
+            "Link Failure",         
+            "Auto-Baud";
+        
+    Param195=               
+         "Run",         
+            "Idle";
+        
+    Param200=               
+         "Power Up",         
+            "Continuous";
+        
+    Param205=               
+         "No Application",         
+            "Installing Application",         
+            "Incompat. Application",         
+            "Application Stopped",         
+            "Application Running";
+        
+    Param206=               
+         "Stop Application",         
+            "Run Application";
+        
+    Param208=               
+         "User",         
+            "PID Controller";
+        
+    Param209=               
+         "Disabled",         
+            "Cause Alarm (A708)",         
+            "Cause Fault (F709)";
+    
+
+ 
